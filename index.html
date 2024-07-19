@@ -14,18 +14,20 @@
   <main>
     <section id="create-gift">
       <h2>Create Your 3D Gift</h2>
-      <form>
+      <form name="create-gift" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="create-gift">
+        
         <label for="gift-name">Gift Name:</label>
-        <input type="text" id="gift-name" name="gift-name">
+        <input type="text" id="gift-name" name="gift-name" required>
         
         <label for="recipient">Recipient:</label>
-        <input type="text" id="recipient" name="recipient">
+        <input type="text" id="recipient" name="recipient" required>
         
         <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
+        <textarea id="message" name="message" required></textarea>
         
         <label for="file-upload">Upload 3D Video:</label>
-        <input type="file" id="file-upload" name="file-upload">
+        <input type="file" id="file-upload" name="file-upload" required>
         
         <button type="submit">Create Gift</button>
       </form>

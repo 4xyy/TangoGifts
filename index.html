@@ -14,7 +14,7 @@
   <main>
     <section id="create-gift">
       <h2>Create Your 3D Gift</h2>
-      <form name="create-gift" method="POST" data-netlify="true">
+      <form name="create-gift" method="POST" action="/.netlify/functions/submit-gift" enctype="multipart/form-data">
         <input type="hidden" name="form-name" value="create-gift">
         
         <label for="gift-name">Gift Name:</label>

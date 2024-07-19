@@ -1,12 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tango.me 3D Video Gifts</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This is a free website hosted on GitHub Pages.</p>
+  <header>
+    <h1>Tango.me 3D Video Gifts</h1>
+    <p>Create and customize your own 3D video gifts for Tango.me!</p>
+  </header>
+  <main>
+    <section id="create-gift">
+      <h2>Create Your 3D Gift</h2>
+      <form>
+        <label for="gift-name">Gift Name:</label>
+        <input type="text" id="gift-name" name="gift-name">
+        
+        <label for="recipient">Recipient:</label>
+        <input type="text" id="recipient" name="recipient">
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        
+        <label for="file-upload">Upload 3D Video:</label>
+        <input type="file" id="file-upload" name="file-upload">
+        
+        <button type="submit">Create Gift</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Tango.me 3D Video Gifts</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>

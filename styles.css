@@ -4,13 +4,43 @@ body {
   margin: 0;
   padding: 0;
 }
-h1 {
-  color: #333;
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
   text-align: center;
+}
+main {
   padding: 20px;
 }
-p {
-  font-size: 18px;
-  color: #666;
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-top: 10px;
+}
+input, textarea, button {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+button:hover {
+  background-color: #0056b3;
+}
+footer {
+  background-color: #333;
+  color: white;
   text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
